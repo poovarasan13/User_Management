@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Logo.psd",
+        "size": "2.0 MB",
+        "modify": "1 hour ago",
+        "icon": "fa fa-file-image-o txt-primary",
+        "folderclass": "fa fa-file-archive-o f-36 txt-warning",
+        "title": "Endless Admin",
+        "foldersize": "204 files, 50mb"
+    },
+    {
+        "id": 2,
+        "name": "Project.zip",
+        "size": "1.90 GB",
+        "modify": "1 hour ago",
+        "icon": "fa fa-file-archive-o txt-secondary",
+        "folderclass": "fa fa-folder f-36 txt-warning",
+        "title": "Endless Admin",
+        "foldersize": "101 files, 10mb"
+    },
+    {
+        "id": 3,
+        "name": "Backend.xls",
+        "size": "2.00 GB",
+        "modify": "1 hour ago",
+        "icon": "fa fa-file-excel-o txt-success",
+        "folderclass": "fa fa-file-archive-o f-36 txt-warning",
+        "title": "Endless Admin",
+        "foldersize": "25 files, 2mb"
+    },
+    {
+        "id": 4,
+        "name": "requirements.txt",
+        "size": "0.90 KB",
+        "modify": "1 hour ago",
+        "icon": "fa fa-file-text-o txt-info",
+        "folderclass": "fa fa-folder f-36 txt-warning",
+        "title": "Endless Admin",
+        "foldersize": "108 files, 5mb"
+    }
+]

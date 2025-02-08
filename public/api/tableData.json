@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "image": "1.jpg",
+    "first_name": "Ram Jacob",
+    "last_name": "Wolfe",
+    "user_name": "RamJacob@twitter",
+    "role": "Developer",
+    "company": "Apple Inc.",
+    "language": "Php",
+    "country": "IND",
+    "color": "secondary",
+    "badgeColor": "danger"
+  },
+  {
+    "id": 2,
+    "image": "2.jpg",
+    "first_name": "John Deo",
+    "last_name": "Gummer",
+    "user_name": "JohnDeo@twitter",
+    "role": "Designer",
+    "company": "Hewlett packard",
+    "language": "Html",
+    "country": "US",
+    "color": "success",
+    "badgeColor": "primary"
+  },
+  {
+    "id": 3,
+    "image": "3.jpg",
+    "first_name": "Elana John",
+    "last_name": "Cazale",
+    "user_name": "ElanaJohn@twitter",
+    "role": "Designer",
+    "company": "Microsoft",
+    "language": "Pug",
+    "country": "UK",
+    "color": "info",
+    "badgeColor": "danger"
+  },
+  {
+    "id": 4,
+    "image": "4.jpg",
+    "first_name": "Meryl Streep",
+    "last_name": "Roberts",
+    "user_name": "MerylStreep@twitter",
+    "role": "Developer",
+    "company": "Tata Ltd.",
+    "language": "React",
+    "country": "IDN",
+    "color": "warning",
+    "badgeColor": "success"
+  },
+  {
+    "id": 5,
+    "image": "5.jpg",
+    "first_name": "Emma Stone",
+    "last_name": "Stone",
+    "user_name": "EmmaStone@twitter",
+    "role": "Developer",
+    "company": "Wipro Ltd.",
+    "language": "Vue",
+    "country": "IRN",
+    "color": "danger",
+    "badgeColor": "primary"
+  },
+  {
+    "id": 6,
+    "image": "6.jpg",
+    "first_name": "Eliana Jons",
+    "last_name": "Jons",
+    "user_name": "ElianaJons@twitter",
+    "role": "Developer",
+    "company": "Info Ltd.",
+    "language": "Vue",
+    "country": "IRN",
+    "color": "light",
+    "badgeColor": "success"
+  }
+]

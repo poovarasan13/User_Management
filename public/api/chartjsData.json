@@ -1,0 +1,313 @@
+{
+    "barChartData": {
+        "labels": [
+            "Mon",
+            "Tue",
+            "Wen",
+            "Thus",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "datasets": [
+            {
+                "label": "y",
+                "lagend": "y",
+                "data": [
+                    35,
+                    59,
+                    80,
+                    81,
+                    56,
+                    55,
+                    40
+                ],
+                "borderColor": "#7366ff",
+                "backgroundColor": "rgba(145, 46, 252, 0.4)",
+                "highlightFill": "#912efc",
+                "highlightStroke": "#7366ff",
+                "borderWidth": 2
+            },
+            {
+                "label": "z",
+                "lagend": "z",
+                "data": [
+                    28,
+                    48,
+                    40,
+                    19,
+                    86,
+                    27,
+                    90
+                ],
+                "borderColor": "#4d8aff",
+                "backgroundColor": "rgba(247, 49, 100, 0.4)",
+                "highlightFill": "rgba(247, 49, 100, 0.4)",
+                "highlightStroke": "#f73164",
+                "borderWidth": 2
+            }
+        ],
+        "plugins": {
+            "datalabels": {
+                "display": false,
+                "color": "white"
+            }
+        }
+    },
+    "barChartOptions": {
+        "maintainAspectRatio": true,
+        "legend": {
+            "display": false
+        },
+        "plugins": {
+            "datalabels": {
+                "display": false
+            }
+        }
+    },
+    "lineChartData": {
+        "labels": [
+            "Mon",
+            "Tue",
+            "Wen",
+            "Thus",
+            "Fri",
+            "Sat",
+            "Sun"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    10,
+                    59,
+                    80,
+                    81,
+                    56,
+                    55,
+                    40
+                ],
+                "label": "Data1",
+                "fill": true,
+                "borderColor": "#7366ff",
+                "backgroundColor": "rgba(145, 46, 252, 0.3)",
+                "borderWidth": 2
+            },
+            {
+                "data": [
+                    28,
+                    48,
+                    40,
+                    19,
+                    86,
+                    27,
+                    90
+                ],
+                "label": "Data2",
+                "borderColor": "#4d8aff",
+                "backgroundColor": "rgba(247, 49, 100, 0.3)",
+                "borderWidth": 2
+            }
+        ],
+        "plugins": {
+            "datalabels": {
+                "display": false,
+                "color": "white"
+            }
+        }
+    },
+    "lineChartOptions": {
+        "maintainAspectRatio": true,
+        "legend": {
+            "display": false
+        },
+        "scales": {
+            "xAxes": {
+                "stacked": false
+            },
+            "yAxes": {
+                "stacked": false
+            }
+        },
+        "plugins": {
+            "datalabels": {
+                "display": false
+            }
+        }
+    },
+    "RadarChartData": {
+        "labels": [
+            "Ford",
+            "Chevy",
+            "Toyota",
+            "Honda",
+            "Mazda"
+        ],
+        "datasets": [
+            {
+                "label": "My Second dataset",
+                "backgroundColor": "rgba(145, 46, 252, 0.4)",
+                "borderColor": "#7366ff",
+                "fill": true,
+                "pointBackgroundColor": "#912efc",
+                "pointBorderColor": "#fff",
+                "pointHoverBackgroundColor": "#7366ff",
+                "pointHoverBorderColor": "#912efc",
+                "data": [
+                    12,
+                    3,
+                    5,
+                    18,
+                    7
+                ]
+            }
+        ]
+    },
+    "lineChart2Data": {
+        "labels": [
+            "",
+            "10",
+            "20",
+            "30",
+            "40",
+            "50",
+            "60",
+            "70",
+            "80"
+        ],
+        "datasets": [
+            {
+                "label": "Data1",
+                "backgroundColor": "rgba(247, 49, 100, 0.2)",
+                "borderColor": "#4d8aff",
+                "pointColor": "#4d8aff",
+                "fill": true,
+                "data": [
+                    10,
+                    20,
+                    40,
+                    30,
+                    0,
+                    20,
+                    10,
+                    30,
+                    10
+                ],
+                "lineTension": 0
+            },
+            {
+                "label": "Data2",
+                "backgroundColor": "rgba(81, 187, 37, 0.2)",
+                "borderColor": "#51bb25",
+                "pointColor": "#51bb25",
+                "fill": true,
+                "data": [
+                    20,
+                    40,
+                    10,
+                    20,
+                    40,
+                    30,
+                    40,
+                    10,
+                    20
+                ],
+                "lineTension": 0
+            },
+            {
+                "label": "Data3",
+                "backgroundColor": "rgba(145, 46, 252, 0.2)",
+                "borderColor": "#7366ff",
+                "pointColor": "#7366ff",
+                "fill": true,
+                "data": [
+                    60,
+                    10,
+                    40,
+                    30,
+                    80,
+                    30,
+                    20,
+                    90,
+                    0
+                ],
+                "lineTension": 0
+            }
+        ]
+    },
+    "lineChart2option": {
+        "maintainAspectRatio": false,
+        "animation": {
+            "duration": 0
+        },
+        "legend": {
+            "display": false
+        },
+        "scaleShowVerticalLines": false,
+        "plugins": {
+            "datalabels": {
+                "display": false,
+                "color": "white"
+            }
+        }
+    },
+    "doughnutData": {
+        "datasets": [
+            {
+                "data": [
+                    350,
+                    450,
+                    100
+                ],
+                "backgroundColor": [
+                    "#7366ff",
+                    "#4d8aff",
+                    "#51bb25"
+                ]
+            }
+        ]
+    },
+    "doughnutOption": {
+        "maintainAspectRatio": false,
+        "legend": {
+            "display": false
+        },
+        "plugins": {
+            "datalabels": {
+                "display": false,
+                "color": "white"
+            }
+        }
+    },
+    "polarData": {
+        "labels": [
+            "Download Sales",
+            "In-Store Sales",
+            "Mail Sales",
+            "Telesales",
+            "Corporate Sales"
+        ],
+        "datasets": [
+            {
+                "data": [
+                    300,
+                    500,
+                    100,
+                    40,
+                    120
+                ],
+                "backgroundColor": [
+                    "#7366ff",
+                    "#4d8aff",
+                    "#f8d62b",
+                    "#51bb25",
+                    "#a927f9"
+                ]
+            }
+        ]
+    },
+    "polarOption": {
+        "legend": {
+            "display": false
+        }
+    }
+}
