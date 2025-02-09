@@ -40,8 +40,8 @@ const Routers = () => {
             <Route path={'/'} element={<PrivateRoute />}>
               {login || authenticated || jwt_token ? (
                 <>
-                  <Route exact path={`${process.env.PUBLIC_URL}`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/sample-page/${layout}`} />} />
-                  <Route exact path={`/`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/sample-page/${layout}`} />} />
+                  <Route exact path={`${process.env.PUBLIC_URL}`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/sample-page`} />} />
+                  <Route exact path={`/`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/sample-page`} />} />
                 </>
               ) : (
                 ''

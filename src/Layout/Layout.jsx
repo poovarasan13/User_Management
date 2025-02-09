@@ -27,7 +27,7 @@ const AppLayout = ({ children, classNames, ...rest }) => {
     <Fragment>
       {/* <Loader /> */}
       <Taptop />
-      <div className={`page-wrapper ${layout1}`} sidebar-layout={sideBarIcon} id='pageWrapper'>
+      <div className={`page-wrapper compact-wrapper modern-type`} sidebar-layout={sideBarIcon} id='pageWrapper'>
         <Header />
         <div className='page-body-wrapper'>
           <Sidebar />
