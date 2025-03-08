@@ -22,10 +22,12 @@ import LearningProvider from './_helper/Learning/LearningProvider';
 import FaqProvider from './_helper/Faq/FaqProvider';
 import AnimationThemeProvider from './_helper/AnimationTheme/AnimationThemeProvider';
 import CustomizerProvider from './_helper/Customizer/CustomizerProvider';
+import UserListProvider from './_helper/User/UserListProvider';
 
 const App = () => (
   <div className='App'>
-    <CustomizerProvider>
+    <UserListProvider>    <CustomizerProvider>
+      
       <FaqProvider>
         <LearningProvider>
           <JobSearchProvider>
@@ -70,6 +72,8 @@ const App = () => (
         </LearningProvider>
       </FaqProvider>
     </CustomizerProvider>
+    </UserListProvider>
+
   </div>
 );
 

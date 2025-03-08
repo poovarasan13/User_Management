@@ -4,14 +4,32 @@ export const MENUITEMS = [
     menucontent: 'Dashboards,Widgets',
     Items: [
       {
-        title: 'Pages',
-        icon: 'sample-page',
+        title: 'Users',
+        icon: 'user',
         type: 'sub',
         children: [
           {
             active: false,
-            path: `${process.env.PUBLIC_URL}/pages/sample-page`,
-            title: 'Sample-Page',
+            path: `${process.env.PUBLIC_URL}/pages/dashboard`,
+            title: 'Dashboard',
+            type: 'link',
+          },
+          {
+            active: false,
+            path: `${process.env.PUBLIC_URL}/pages/user-list`,
+            title: 'User List',
+            type: 'link',
+          },
+          {
+            active: false,
+            path: `${process.env.PUBLIC_URL}/pages/user-list`,
+            title: 'Category',
+            type: 'link',
+          },
+          {
+            active: false,
+            path: `${process.env.PUBLIC_URL}/pages/user-list`,
+            title: '',
             type: 'link',
           },
         ],

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import H3 from '../Headings/H3Element';
 import CustomizerContext from '../../_helper/Customizer';
 import SvgIcon from '../../Components/Common/Component/SvgIcon';
+import AddUser from '../../Components/Pages/User/Services/AddUser';
 
 const Breadcrumbs = (props) => {
   const { layoutURL } = useContext(CustomizerContext);
@@ -12,11 +13,11 @@ const Breadcrumbs = (props) => {
       <Container fluid={true}>
         <div className='page-title'>
           <Row>
-            <Col xs='6'>
+            <Col xs='10'>
               <H3>{props.mainTitle}</H3>
             </Col>
-            <Col xs='6'>
-              <ol className='breadcrumb'>
+            <Col xs='2' >
+              {/* <ol className='breadcrumb'>
                 <li className='breadcrumb-item'>
                   <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}>
                     <SvgIcon iconId='stroke-home' />
@@ -25,7 +26,8 @@ const Breadcrumbs = (props) => {
                 <li className='breadcrumb-item'>{props.parent}</li>
                 {props.subParent ? <li className='breadcrumb-item'>{props.subParent}</li> : ''}
                 <li className='breadcrumb-item active'>{props.title}</li>
-              </ol>
+              </ol> */}
+              <AddUser/>
             </Col>
           </Row>
         </div>

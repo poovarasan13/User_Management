@@ -16,7 +16,7 @@ import seoul from '../../../assets/images/layouts/seoul.jpg';
 import singapore from '../../../assets/images/layouts/singapore.jpg';
 import tokyo from '../../../assets/images/layouts/tokyo.jpg';
 import { classes } from '../../../Data/Layouts';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 const CheckLayout = () => {
   const { addSidebarLayouts } = useContext(CustomizerContext);

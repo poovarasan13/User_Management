@@ -1512,9 +1512,9 @@ export const CompareToLastMonth = 'Compare to last month';
 
 export const English = 'English';
 export const Deutsch = 'Deutsch';
-export const Español = 'Español';
-export const Français = 'Français';
-export const Português = 'Português';
+// export const Español = 'Español';
+// export const Français = 'Français';
+// export const Português = 'Português';
 export const 简体中文 = '简体中文';
 export const DeliveryProcessing = 'Delivery processing';
 export const OrderComplete = 'Order Complete';

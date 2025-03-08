@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "mobile": 9878767676,
+        "email": "john@gmail.com",
+        "gender": "male",
+        "role": "developer",
+        "status": "active"
+    },
+    {
+        "id": 2,
+        "name": "Emma",
+        "mobile": 8765432109,
+        "email": "emma@gmail.com",
+        "gender": "female",
+        "role": "designer",
+        "status": "active"
+    },
+    {
+        "id": 3,
+        "name": "Michael",
+        "mobile": 9123456780,
+        "email": "michael@gmail.com",
+        "gender": "male",
+        "role": "manager",
+        "status": "active"
+    },
+    {
+        "id": 4,
+        "name": "Sophia",
+        "mobile": 8234567891,
+        "email": "sophia@gmail.com",
+        "gender": "female",
+        "role": "developer",
+        "status": "active"
+    },
+    {
+        "id": 5,
+        "name": "William",
+        "mobile": 9345678902,
+        "email": "william@gmail.com",
+        "gender": "male",
+        "role": "tester",
+        "status": "inactive"
+    },
+    {
+        "id": 6,
+        "name": "Olivia",
+        "mobile": 7456789013,
+        "email": "olivia@gmail.com",
+        "gender": "female",
+        "role": "developer",
+        "status": "active"
+    },
+    {
+        "id": 7,
+        "name": "James",
+        "mobile": 6567890124,
+        "email": "james@gmail.com",
+        "gender": "male",
+        "role": "HR",
+        "status": "active"
+    },
+    {
+        "id": 8,
+        "name": "Ava",
+        "mobile": 5678901235,
+        "email": "ava@gmail.com",
+        "gender": "female",
+        "role": "developer",
+        "status": "inactive"
+    },
+    {
+        "id": 9,
+        "name": "Benjamin",
+        "mobile": 4789012346,
+        "email": "benjamin@gmail.com",
+        "gender": "male",
+        "role": "designer",
+        "status": "active"
+    },
+    {
+        "id": 10,
+        "name": "Mia",
+        "mobile": 3890123457,
+        "email": "mia@gmail.com",
+        "gender": "female",
+        "role": "tester",
+        "status": "active"
+    },
+    {
+        "id": 11,
+        "name": "Lucas",
+        "mobile": 2901234568,
+        "email": "lucas@gmail.com",
+        "gender": "male",
+        "role": "manager",
+        "status": "active"
+    },
+    {
+        "id": 12,
+        "name": "Charlotte",
+        "mobile": 1012345679,
+        "email": "charlotte@gmail.com",
+        "gender": "female",
+        "role": "developer",
+        "status": "active"
+    },
+    {
+        "id": 13,
+        "name": "Henry",
+        "mobile": 2123456780,
+        "email": "henry@gmail.com",
+        "gender": "male",
+        "role": "tester",
+        "status": "inactive"
+    },
+    {
+        "id": 14,
+        "name": "Amelia",
+        "mobile": 3234567891,
+        "email": "amelia@gmail.com",
+        "gender": "female",
+        "role": "HR",
+        "status": "active"
+    },
+    {
+        "id": 15,
+        "name": "Ethan",
+        "mobile": 4345678902,
+        "email": "ethan@gmail.com",
+        "gender": "male",
+        "role": "developer",
+        "status": "active"
+    },
+    {
+        "id": 16,
+        "name": "Harper",
+        "mobile": 5456789013,
+        "email": "harper@gmail.com",
+        "gender": "female",
+        "role": "designer",
+        "status": "active"
+    },
+    {
+        "id": 17,
+        "name": "Alexander",
+        "mobile": 6567890124,
+        "email": "alexander@gmail.com",
+        "gender": "male",
+        "role": "tester",
+        "status": "inactive"
+    },
+    {
+        "id": 18,
+        "name": "Evelyn",
+        "mobile": 7678901235,
+        "email": "evelyn@gmail.com",
+        "gender": "female",
+        "role": "manager",
+        "status": "active"
+    },
+    {
+        "id": 19,
+        "name": "Daniel",
+        "mobile": 8789012346,
+        "email": "daniel@gmail.com",
+        "gender": "male",
+        "role": "HR",
+        "status": "inactive"
+    },
+    {
+        "id": 20,
+        "name": "Scarlett",
+        "mobile": 9890123457,
+        "email": "scarlett@gmail.com",
+        "gender": "female",
+        "role": "developer",
+        "status": "active"
+    }
+]

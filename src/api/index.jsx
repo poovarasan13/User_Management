@@ -2,6 +2,7 @@ const api = `${process.env.PUBLIC_URL}/api`;
 export const TaskApi = `${api}/task.json`;
 export const BookmarkApi = `${api}/bookmark.json`;
 export const ChartistApi = `${api}/chartistData.json`;
+export const UserApi= `${api}/user.json`;
 export const ChartjsApi = `${api}/chartjsData.json`;
 export const ChatMemberApi = `${api}/chatMember.json`;
 export const ChatApi = `${api}/chat.chats.json`;
