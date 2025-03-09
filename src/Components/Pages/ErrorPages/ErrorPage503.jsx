@@ -20,7 +20,7 @@ const Error503 = () => {
                         <Col md="8 offset-md-2">
                             <P attrPara={{ className: "sub-content" }} >{"The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved."}</P>
                         </Col>
-                        <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}><Button color="secondary-gradien" size='lg'>{BACK_TO_HOME_PAGE}</Button></Link>
+                        <Link to={`${process.env.PUBLIC_URL}/pages/dashboard/${layoutURL}`}><Button color="secondary-gradien" size='lg'>{BACK_TO_HOME_PAGE}</Button></Link>
                     </Container>
                 </div>
             </div>

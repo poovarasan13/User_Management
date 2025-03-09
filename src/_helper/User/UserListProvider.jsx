@@ -18,16 +18,28 @@ const UserListProvider = (props) => {
         getUser();
      },[setUser])
 
+     const editUser=(userDetails)=>{
+           const updateUser=user.map((data)=>
+            data.id===userDetails.id?userDetails :data
+           );
+           setUser(updateUser)
 
+     }
      const deleteUser=(id)=>{
-      const updatedUser=user.filter((data)=> data.id!==id);
-      setUser(updatedUser);
+      const deleteUser=user.filter((data)=> data.id!==id);
+      setUser(deleteUser);
+     }
+
+     const addUser=(userDetails)=>{
+      setUser([...user,userDetails])
      }
   return (
     <Context.Provider 
     value={{
-        user,
-        deleteUser,
+      user,
+      deleteUser,
+      addUser,
+      editUser
     }}>
       {props.children}
     </Context.Provider>

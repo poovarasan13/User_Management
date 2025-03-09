@@ -1,10 +1,10 @@
 import React, { Fragment, useContext } from 'react';
-import sad from '../../../assets/images/other-images/sad.png';
 import { Link } from 'react-router-dom';
-import { Container, Button, Media, Col } from "reactstrap"
-import { BACK_TO_HOME_PAGE } from "../../../Constant";
+import { Button, Col, Container, Media } from "reactstrap";
 import { H2, P } from '../../../AbstractElements';
+import { BACK_TO_HOME_PAGE } from "../../../Constant";
 import CustomizerContext from '../../../_helper/Customizer';
+import sad from '../../../assets/images/other-images/sad.png';
 
 const Error401 = () => {
     const { layoutURL } = useContext(CustomizerContext);
@@ -20,7 +20,7 @@ const Error401 = () => {
                         <Col md="8 offset-md-2">
                             <P attrPara={{ className: "sub-content" }} >{"The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved."}</P>
                         </Col>
-                        <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}><Button color="warning-gradien" size='lg'>{BACK_TO_HOME_PAGE}</Button></Link>
+                        <Link to={`${process.env.PUBLIC_URL}//${layoutURL}`}><Button color="warning-gradien" size='lg'>{BACK_TO_HOME_PAGE}</Button></Link>
                     </Container>
                 </div>
             </div>

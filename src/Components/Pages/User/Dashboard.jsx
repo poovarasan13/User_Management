@@ -7,11 +7,9 @@ const Dashboard = () => {
   const {user}=useContext(UserContext);
   const totalCount=user.length;
   const activeCount=user.filter((data)=>data.status==='active').length;
-  const maleCount=user.filter((data)=>data.gender==='male').length;
+  const maleCount=user.filter((data)=>data.gender==='Male').length;
 
-  const femaleCount=user.filter((data)=>data.gender==='female').length;
-
-  
+  const femaleCount=user.filter((data)=>data.gender==='Female').length;
 
   return (
     <Fragment>

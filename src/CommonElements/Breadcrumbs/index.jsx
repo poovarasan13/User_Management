@@ -1,13 +1,13 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import H3 from '../Headings/H3Element';
-import CustomizerContext from '../../_helper/Customizer';
-import SvgIcon from '../../Components/Common/Component/SvgIcon';
+// import CustomizerContext from '../../_helper/Customizer';
+// import SvgIcon from '../../Components/Common/Component/SvgIcon';
 import AddUser from '../../Components/Pages/User/Services/AddUser';
 
 const Breadcrumbs = (props) => {
-  const { layoutURL } = useContext(CustomizerContext);
+  // const { layoutURL } = useContext(CustomizerContext);
   return (
     <Fragment>
       <Container fluid={true}>
@@ -19,7 +19,7 @@ const Breadcrumbs = (props) => {
             <Col xs='2' >
               {/* <ol className='breadcrumb'>
                 <li className='breadcrumb-item'>
-                  <Link to={`${process.env.PUBLIC_URL}/pages/sample-page/${layoutURL}`}>
+                  <Link to={`${process.env.PUBLIC_URL}/pages/dashboard/${layoutURL}`}>
                     <SvgIcon iconId='stroke-home' />
                   </Link>
                 </li>

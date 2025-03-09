@@ -4,8 +4,8 @@
         "name": "John",
         "mobile": 9878767676,
         "email": "john@gmail.com",
-        "gender": "male",
-        "role": "developer",
+        "gender": "Male",
+        "role": "Developer",
         "status": "active"
     },
     {
@@ -13,8 +13,8 @@
         "name": "Emma",
         "mobile": 8765432109,
         "email": "emma@gmail.com",
-        "gender": "female",
-        "role": "designer",
+        "gender": "Female",
+        "role": "Designer",
         "status": "active"
     },
     {
@@ -22,8 +22,8 @@
         "name": "Michael",
         "mobile": 9123456780,
         "email": "michael@gmail.com",
-        "gender": "male",
-        "role": "manager",
+        "gender": "Male",
+        "role": "Manager",
         "status": "active"
     },
     {
@@ -31,8 +31,8 @@
         "name": "Sophia",
         "mobile": 8234567891,
         "email": "sophia@gmail.com",
-        "gender": "female",
-        "role": "developer",
+        "gender": "Female",
+        "role": "Developer",
         "status": "active"
     },
     {
@@ -40,8 +40,8 @@
         "name": "William",
         "mobile": 9345678902,
         "email": "william@gmail.com",
-        "gender": "male",
-        "role": "tester",
+        "gender": "Male",
+        "role": "Tester",
         "status": "inactive"
     },
     {
@@ -49,8 +49,8 @@
         "name": "Olivia",
         "mobile": 7456789013,
         "email": "olivia@gmail.com",
-        "gender": "female",
-        "role": "developer",
+        "gender": "Female",
+        "role": "Developer",
         "status": "active"
     },
     {
@@ -58,7 +58,7 @@
         "name": "James",
         "mobile": 6567890124,
         "email": "james@gmail.com",
-        "gender": "male",
+        "gender": "Male",
         "role": "HR",
         "status": "active"
     },
@@ -67,8 +67,8 @@
         "name": "Ava",
         "mobile": 5678901235,
         "email": "ava@gmail.com",
-        "gender": "female",
-        "role": "developer",
+        "gender": "Female",
+        "role": "Developer",
         "status": "inactive"
     },
     {
@@ -76,8 +76,8 @@
         "name": "Benjamin",
         "mobile": 4789012346,
         "email": "benjamin@gmail.com",
-        "gender": "male",
-        "role": "designer",
+        "gender": "Male",
+        "role": "Designer",
         "status": "active"
     },
     {
@@ -85,8 +85,8 @@
         "name": "Mia",
         "mobile": 3890123457,
         "email": "mia@gmail.com",
-        "gender": "female",
-        "role": "tester",
+        "gender": "Female",
+        "role": "Tester",
         "status": "active"
     },
     {
@@ -94,8 +94,8 @@
         "name": "Lucas",
         "mobile": 2901234568,
         "email": "lucas@gmail.com",
-        "gender": "male",
-        "role": "manager",
+        "gender": "Male",
+        "role": "Manager",
         "status": "active"
     },
     {
@@ -103,8 +103,8 @@
         "name": "Charlotte",
         "mobile": 1012345679,
         "email": "charlotte@gmail.com",
-        "gender": "female",
-        "role": "developer",
+        "gender": "Female",
+        "role": "Developer",
         "status": "active"
     },
     {
@@ -112,8 +112,8 @@
         "name": "Henry",
         "mobile": 2123456780,
         "email": "henry@gmail.com",
-        "gender": "male",
-        "role": "tester",
+        "gender": "Male",
+        "role": "Tester",
         "status": "inactive"
     },
     {
@@ -121,7 +121,7 @@
         "name": "Amelia",
         "mobile": 3234567891,
         "email": "amelia@gmail.com",
-        "gender": "female",
+        "gender": "Female",
         "role": "HR",
         "status": "active"
     },
@@ -130,8 +130,8 @@
         "name": "Ethan",
         "mobile": 4345678902,
         "email": "ethan@gmail.com",
-        "gender": "male",
-        "role": "developer",
+        "gender": "Male",
+        "role": "Developer",
         "status": "active"
     },
     {
@@ -139,8 +139,8 @@
         "name": "Harper",
         "mobile": 5456789013,
         "email": "harper@gmail.com",
-        "gender": "female",
-        "role": "designer",
+        "gender": "Female",
+        "role": "Designer",
         "status": "active"
     },
     {
@@ -148,8 +148,8 @@
         "name": "Alexander",
         "mobile": 6567890124,
         "email": "alexander@gmail.com",
-        "gender": "male",
-        "role": "tester",
+        "gender": "Male",
+        "role": "Tester",
         "status": "inactive"
     },
     {
@@ -157,8 +157,8 @@
         "name": "Evelyn",
         "mobile": 7678901235,
         "email": "evelyn@gmail.com",
-        "gender": "female",
-        "role": "manager",
+        "gender": "Female",
+        "role": "Manager",
         "status": "active"
     },
     {
@@ -166,7 +166,7 @@
         "name": "Daniel",
         "mobile": 8789012346,
         "email": "daniel@gmail.com",
-        "gender": "male",
+        "gender": "Male",
         "role": "HR",
         "status": "inactive"
     },
@@ -175,8 +175,8 @@
         "name": "Scarlett",
         "mobile": 9890123457,
         "email": "scarlett@gmail.com",
-        "gender": "female",
-        "role": "developer",
+        "gender": "Female",
+        "role": "Developer",
         "status": "active"
     }
 ]

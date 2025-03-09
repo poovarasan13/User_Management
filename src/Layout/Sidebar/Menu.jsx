@@ -22,16 +22,10 @@ export const MENUITEMS = [
           },
           {
             active: false,
-            path: `${process.env.PUBLIC_URL}/pages/user-list`,
+            path: `${process.env.PUBLIC_URL}/pages/user-category`,
             title: 'Category',
             type: 'link',
-          },
-          {
-            active: false,
-            path: `${process.env.PUBLIC_URL}/pages/user-list`,
-            title: '',
-            type: 'link',
-          },
+          }
         ],
       },
       {
