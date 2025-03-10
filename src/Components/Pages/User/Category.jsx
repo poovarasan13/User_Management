@@ -6,6 +6,7 @@ import UserRow from "./UserRow";
 const Category = () => {
   const [getRole, setGetRole] = useState("");
   const [getStatus, setGetStatus] = useState("");
+  const [getGender, setGetGender] = useState("");
   const { user } = useContext(UserContext);
   const userData = user;
   // const handleInput = (e) => {
@@ -14,7 +15,8 @@ const Category = () => {
   const filteredUsers = getRole
   ? userData.filter((data) => 
     (getRole ? data.role === getRole :true) &&
-  (getStatus ? data.status === getStatus : true)
+  (getStatus ? data.status === getStatus : true) &&
+  (getGender ? data.gender===getGender:true)
 ) :userData;
   return (
     <Fragment>
@@ -52,7 +54,19 @@ const Category = () => {
         <option value="active">Active</option>
         <option value="inactive">Inactive</option>
       </Form.Select>
+    </div><div className="d-flex align-items-center gap-2">
+      <Form.Label className="mb-0">Gender:</Form.Label>
+      <Form.Select
+        name="gender"
+        value={getGender}
+        onChange={(e) => setGetGender(e.target.value)}
+        className="form-select form-select-sm w-auto"
+      >
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </Form.Select>
     </div>
+
   </Form.Group>
 </Col>
 

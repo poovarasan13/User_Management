@@ -73,7 +73,7 @@ const UserRow = ({ index, id, name, mobile, email, gender, role, status }) => {
     </ModalHeader>
     
     <ModalBody className="text-center">
-        <p className="text-muted">Are you sure you want to delete this?</p>
+        <p className="text-muted">Are you sure you want to delete this user?</p>
         <div className="d-flex justify-content-center gap-3">
             <Button variant="secondary" size="sm" onClick={() => setShowModal(false)}>No</Button>
             <Button variant="danger" size="sm" onClick={confirmDelete}>Yes</Button>
