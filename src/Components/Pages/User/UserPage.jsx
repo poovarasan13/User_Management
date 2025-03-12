@@ -1,13 +1,35 @@
-import React, { Fragment, useContext } from "react";
-import { Container, Table } from "reactstrap";
+import React, { Fragment, useContext, useState } from "react";
+import {Row, Container, Table } from "reactstrap";
 import { Breadcrumbs } from "../../../AbstractElements";
 import UserContext from "../../../_helper/User";
 
 // import AddUser from './Services/AddUser';
 import UserRow from "./UserRow";
+import PageNation from "./Services/PageNation";
+import Filter from "./Services/Filter";
 const UserPage = () => {
+  // const [getRole, setGetRole] = useState("");
+  // const [getStatus, setGetStatus] = useState("");
+  // const [getGender, setGetGender] = useState("");
   const { user } = useContext(UserContext);
-  console.log(user);
+  const [search,setSearch]=useState("");
+  const userData=user;
+      const filteredUsers = userData.filter(
+        (data) =>
+          // (getRole ? data.role === getRole : true) &&
+          // (getStatus ? data.status === getStatus : true) &&
+          // (getGender ? data.gender === getGender : true) &&
+          (search ? 
+            data.name.toLowerCase().includes(search.toLowerCase()) || 
+            data.email.toLowerCase().includes(search.toLowerCase()): true) 
+      );
+  // console.log(user);
+  const totaluser=filteredUsers.length;
+  const[page,setPage]=useState(1);
+  const[userperPerson,setUserPerPerson]=useState(5);
+  const last=page*userperPerson;
+  const first=last-userperPerson;
+  const finalData=filteredUsers.slice(first,last);
   //   const handleEdit=()=>{
   //   alert("you can edit");
   //   }
@@ -19,11 +41,14 @@ const UserPage = () => {
     <Fragment>
       <Breadcrumbs mainTitle="Users" parent="Pages" title="Users" />
       <Container fluid={true}>
-        {/* <Row>
-                <Col md="2" className="ms-auto ">
-                <AddUser/>
-                </Col>
-          </Row> */}
+        <Row className="pb-3">           <Filter
+                  data={true}
+                  setSearch={setSearch}
+                  search={search}
+                  
+            />
+            </Row>
+ 
         <div className="table-responsive">
           <Table bordered className="align-middle">
             <thead>
@@ -40,10 +65,10 @@ const UserPage = () => {
             </thead>
 
             <tbody>
-              {user.map((data, index) => (
+              {finalData.map((data, index) => (
                 <tr key={index}>
                   <UserRow
-                    index={index}
+                    index={index+first}
                     id={data.id}
                     name={data.name}
                     mobile={data.mobile}
@@ -55,7 +80,9 @@ const UserPage = () => {
                 </tr>
               ))}
             </tbody>
+
           </Table>
+          <PageNation totaluser={totaluser} setPage={setPage} userperPerson={userperPerson} setUserPerPerson={setUserPerPerson} page={page}/>
         </div>
       </Container>
     </Fragment>
