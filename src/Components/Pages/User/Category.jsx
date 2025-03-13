@@ -11,6 +11,7 @@ const Category = () => {
   const [getGender, setGetGender] = useState("");
   const { user } = useContext(UserContext);
   const [search,setSearch]=useState("");
+  const [sort, setSort] = useState("asc"); 
   // console.lgo(search);
   // const handleInput = (e) => {
   //   setGetRole(e.target.value);
@@ -26,12 +27,21 @@ const Category = () => {
             data.email.toLowerCase().includes(search.toLowerCase()): true) 
       );
       
-    const totaluser=filteredUsers.length;
+      const handleSort = () => {
+        setSort(sort === "asc" ? "desc" : "asc");
+      };
+    
+      const sortedUsers = [...filteredUsers].sort((a, b) => {
+        return sort === "asc"
+          ? a.name.localeCompare(b.name)
+          : b.name.localeCompare(a.name);
+      });
+    const totaluser=sortedUsers.length;
     const[page,setPage]=useState(1);
     const[userperPerson,setUserPerPerson]=useState(5);
     const last=page*userperPerson;
     const first=last-userperPerson;
-    const finalData=filteredUsers.slice(first,last);
+    const finalData=sortedUsers.slice(first,last);
   
   return (
     <Fragment>
@@ -67,7 +77,9 @@ const Category = () => {
               <thead>
                 <tr className="table-active">
                   <td>S No.</td>
-                  <th>Name</th>
+                  <th style={{ cursor: "pointer" }} onClick={handleSort}>
+                  Name {sort === "asc" ? "▲" : "▼"}
+                </th>
                   <th>Mobile No.</th>
                   <th>Email</th>
                   <th>Gender</th>

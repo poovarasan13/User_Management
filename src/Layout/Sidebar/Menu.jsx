@@ -28,19 +28,19 @@ export const MENUITEMS = [
           }
         ],
       },
-      {
-        title: 'Support Ticket',
-        icon: 'support-tickets',
-        type: 'sub',
-        children: [
-          {
-            active: false,
-            path: `http://support.pixelstrap.com/help-center`,
-            title: 'Rise Ticket',
-            type: 'link',
-          },
-        ],
-      },
+      // {
+      //   title: 'Support Ticket',
+      //   icon: 'support-tickets',
+      //   type: 'sub',
+      //   children: [
+      //     {
+      //       active: false,
+      //       path: `http://support.pixelstrap.com/help-center`,
+      //       title: 'Rise Ticket',
+      //       type: 'link',
+      //     },
+      //   ],
+      // },
     ],
   },
 ];
