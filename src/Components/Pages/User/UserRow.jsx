@@ -6,14 +6,14 @@ import { Button, Modal,ModalHeader,ModalBody,Label ,Input} from 'reactstrap';
 // import { set } from 'react-hook-form';
 
 const UserRow = ({ index, id, name, mobile, email, gender, role, status }) => {
-    const { deleteUser , editUser,user} = useContext(UserContext);
-       const data=user.filter((data)=> data.id===id)
+    const { deleteUser , editUser} = useContext(UserContext);
+    //    const data=user.find((data)=> data.id===id)
     //    console.log(data);
     //    console.log(data[0].name);
     // const random = () => Math.floor(Math.random() * 1000000);
     const [userDetails, setUserDetails] = useState({
         id: id,
-        name: data[0].name,
+        name: name,
         mobile: mobile,
         email: email,
         gender: gender,

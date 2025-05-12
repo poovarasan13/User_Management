@@ -24,7 +24,7 @@ import Error503 from '../Components/Pages/ErrorPages/ErrorPage503';
 
 export const authRoutes = [
   { path: `${process.env.PUBLIC_URL}/login`, Component: <Logins /> },
-  { path: `${process.env.PUBLIC_URL}/pages/authentication/login-simple/:layout`, Component: <LoginForm /> },
+  { path: `${process.env.PUBLIC_URL}/pages/authentication/login-simple/`, Component: <LoginForm /> },
   { path: `${process.env.PUBLIC_URL}/pages/authentication/login-img/:layout`, Component: <LoginOne /> },
   { path: `${process.env.PUBLIC_URL}/pages/authentication/login-bg-img/:layout`, Component: <LoginTwo /> },
   { path: `${process.env.PUBLIC_URL}/pages/authentication/login-validation/:layout`, Component: <LoginValidation /> },

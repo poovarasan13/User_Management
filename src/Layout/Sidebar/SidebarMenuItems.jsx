@@ -9,8 +9,8 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
   const { layout } = useContext(CustomizerContext);
   const layout1 = localStorage.getItem('sidebar_layout') || layout;
 
-  const id = window.location.pathname.split('/').pop();
-  const layoutId = id;
+  // const id = window.location.pathname.split('/').pop();
+  // const layoutId = id;
   const CurrentPath = window.location.pathname;
 
   const { t } = useTranslation();
@@ -80,7 +80,7 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
               )}
 
               {menuItem.type === 'link' ? (
-                <Link to={menuItem.path + '/' + layoutId} className={`sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? 'active' : ''}`} onClick={() => toggletNavActive(menuItem)}>
+                <Link to={menuItem.path + '/'} className={`sidebar-link sidebar-title link-nav  ${CurrentPath.includes(menuItem.title.toLowerCase()) ? 'active' : ''}`} onClick={() => toggletNavActive(menuItem)}>
                   <SvgIcon className='stroke-icon' iconId={`stroke-${menuItem.icon}`} />
                   <SvgIcon className='fill-icon' iconId={`fill-${menuItem.icon}`} />
                   <span>{t(menuItem.title)}</span>
@@ -116,7 +116,7 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
 
                         {childrenItem.type === 'link' ? (
                           <Link
-                            to={childrenItem.path + '/' + layoutId}
+                            to={childrenItem.path + '/' }
                             className={`${CurrentPath.includes(childrenItem?.title?.toLowerCase()) ? 'active' : ''}`}
                             // className={`${childrenItem.active ? 'active' : ''}`} bonusui
                             onClick={() => toggletNavActive(childrenItem)}>
@@ -132,7 +132,7 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
                               <li key={key}>
                                 {childrenSubItem.type === 'link' ? (
                                   <Link
-                                    to={childrenSubItem.path + '/' + layoutId}
+                                    to={childrenSubItem.path + '/' }
                                     className={`${CurrentPath.includes(childrenSubItem?.title?.toLowerCase()) ? 'active' : ''}`}
                                     // className={`${childrenSubItem.active ? 'active' : ''}`}
                                     onClick={() => toggletNavActive(childrenSubItem)}>

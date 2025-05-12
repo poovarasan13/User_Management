@@ -32,7 +32,7 @@ const LoginTab = ({ selected }) => {
     setName('Emay Walter');
     if (email !== '' && password !== '') {
       localStorage.setItem('login', JSON.stringify(true));
-      history(`${process.env.PUBLIC_URL}/pages/dashboard/${layoutURL}`);
+      history(`${process.env.PUBLIC_URL}/pages/dashboard`);
     }
   };
 
@@ -50,7 +50,7 @@ const LoginTab = ({ selected }) => {
         setValue(man);
         setName('Emay Walter');
         localStorage.setItem('token', Jwt_token);
-        window.location.href = `${process.env.PUBLIC_URL}/pages/dashboard/${layoutURL}`;
+        window.location.href = `${process.env.PUBLIC_URL}/pages/dashboard`;
         return user;
       });
   };

@@ -9,7 +9,8 @@ import Filter from "./Services/Filter";
 const UserPage = () => {
   const { user } = useContext(UserContext);
   const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc"); 
+  const [sort, setSort] = useState("desc"); 
+  const [enable,setEnable]=useState(false);
   const [page, setPage] = useState(1);
   const [userperPerson, setUserPerPerson] = useState(5);
 
@@ -24,14 +25,16 @@ const UserPage = () => {
   );
 
   const handleSort = () => {
+
     setSort(sort === "asc" ? "desc" : "asc");
+    setEnable(true);
   };
 
-  const sortedUsers = [...filteredUsers].sort((a, b) => {
+  const sortedUsers = enable?[...filteredUsers].sort((a, b) => {
     return sort === "asc"
       ? a.name.localeCompare(b.name)
       : b.name.localeCompare(a.name);
-  });
+  }):filteredUsers;
 
   const totaluser = sortedUsers.length;
   const last = page * userperPerson;
@@ -65,7 +68,7 @@ const UserPage = () => {
 
             <tbody>
               {finalData.map((data, index) => (
-                <tr key={index}>
+                <tr key={data.id}>
                   <UserRow
                     index={index + first}
                     id={data.id}

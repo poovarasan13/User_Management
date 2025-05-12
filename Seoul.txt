@@ -1,0 +1,1 @@
+ { Seoul: 'compact-wrapper modern-type' },

@@ -16,8 +16,8 @@ const Routers = () => {
   const login = useState(JSON.parse(localStorage.getItem('login')))[0];
   const [authenticated, setAuthenticated] = useState(false);
   const jwt_token = localStorage.getItem('token');
-  const defaultLayoutObj = classes.find((item) => Object.values(item).pop(1) === 'compact-wrapper');
-  const layout = localStorage.getItem('layout') || Object.keys(defaultLayoutObj).pop();
+  // const defaultLayoutObj = classes.find((item) => Object.values(item).pop(1) === 'compact-wrapper');
+  // const layout = localStorage.getItem('layout') || Object.keys(defaultLayoutObj).pop();
 
   useEffect(() => {
     let abortController = new AbortController();
@@ -40,8 +40,8 @@ const Routers = () => {
             <Route path={'/'} element={<PrivateRoute />}>
               {login || authenticated || jwt_token ? (
                 <>
-                  <Route exact path={`${process.env.PUBLIC_URL}`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/dashboard/${layout}`} />} />
-                  <Route exact path={`/`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/dashboard/${layout}`} />} />
+                  <Route exact path={`${process.env.PUBLIC_URL}`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/dashboard`} />} />
+                  <Route exact path={`/`} element={<Navigate to={`${process.env.PUBLIC_URL}/pages/dashboard`} />} />
                 </>
               ) : (
                 ''

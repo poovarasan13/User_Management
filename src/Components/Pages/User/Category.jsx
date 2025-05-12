@@ -90,7 +90,7 @@ const Category = () => {
               </thead>
               <tbody>
                 {finalData.map((data, index) => (
-                  <tr key={index}>
+                  <tr key={data.id}>
                     <UserRow
                       index={index+first}
                       id={data.id}
